@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Reset e estilo base */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background: #000000;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 10px auto;
+
+}
+
+.container .box {
+    width: 100%;
+    padding: 10px;
+}
+
+.container .box nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .box nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.container .box nav ul li {
+    display: inline-block;
+}
+
+.container .box nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #efeded;
+    transition: 0.4s ease;
+}
+
+.container .box nav ul li a:hover {
+        color: #3f2b70;
+        cursor: pointer;
+        transition-timing-function: ease;
+        transform: translate(0, -15%);
+        transition: 0.4s;
+
+}
+
+.container .box nav .logo {
+    font-size: 35px;
+    color: #efeded;
+    font-weight: bold;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+/* Menu mobile (oculto por padrão) */
+#mobile-btn {
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+
+.efeito-txt-topo, .efeito-img-topo, .imag,.tx-title, .tx-titulo, .sobre-mim{
+    visibility: hidden;
+}
+#title, .imagem-1, .imagem-2, .imagem-3, #html-5, #css, #javaScript, #github, #react, #node {
+    visibility: hidden;
+}
+
+.tx1,.tx2, .tx3, .tx4{
+    visibility: hidden;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+    color: #ffffff;
+}
+
+.info .section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+    max-width: 600px;
+    justify-self: center; 
+}
+
+.info .section-1 h1 {
+    font-size: 4rem;
+    color: #efeded;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.info .section-1 h3 {
+    font-size: 2.8rem;
+    color: #3f2b70;
+    
+}
+
+.info .section-1 p {
+    font-size: 1.5rem;
+    color: #d6d6d6;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.info .wrapper {
+    margin-top: 1rem;
+    justify-self: start;
+}
+
+.info .imagem img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    justify-self: center; /* Centraliza a imagem */
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .info {
+        grid-template-columns: 1fr; /* Apenas uma coluna */
+        text-align: center;
+    }
+
+    .info .section-1 {
+        max-width: 100%;
+    }
+
+    .info .section-1 h1 {
+        font-size: 2.5rem;
+    }
+
+    .info .section-1 h3 {
+        font-size: 1.5rem;
+    }
+
+    .info .section-1 p {
+        font-size: 0.9rem;
+    }
+
+    .info .imagem img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .info {
+        height: 90%;
+    }
+    .info .section-1 h1 {
+        font-size: 2rem;
+    }
+
+    .info .section-1 h3 {
+        font-size: 1.2rem;
+    }
+
+    .info .section-1 p {
+        font-size: 0.8rem;
+    }
+
+    .info .imagem img {
+        width: 100%;
+    }
+
+    .info .bt {
+        font-size: 0.9rem;
+        padding: 0.1rem 1rem;
+    }
+}
+
+/* SOBRE MIM */
+
+.sobre {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem; /* Espaçamento entre a imagem e o texto */
+    color: #ffffff;
+    flex-wrap: wrap; /* Permite reorganizar os elementos em telas menores */
+}
+
+.sobre img {
+    margin-right: 50px;
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.sobre img:hover {
+    transform: scale(1.05); 
+}
+
+.sobre .infor {
+    max-width: 600px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem; 
+}
+
+.sobre .tx-title {
+    font-size: 3.5rem;
+    color: #6f34fe;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sobre .tx-titulo {
+    font-size: 1.8rem;
+    color: #7c8bd1;
+}
+
+.sobre .sobre-mim {
+    font-size: 1.1rem;
+    color: #efeded;
+    line-height: 1.6; 
+    text-align: justify;
+
+}
+
+.sobre .wrapper {
+    margin-top: 1.5rem;
+}
+
+/* Ajustes Responsivos */
+
+@media screen and (max-width: 768px) {
+    .sobre {
+        flex-direction: column; /* Reorganiza os elementos em coluna */
+        align-items: center;
+        text-align: center;
+    }
+    .sobre img {
+        width: 80%;
+    }
+
+    .sobre .infor {
+        max-width: 100%;
+    }
+
+    .sobre .tx-title {
+        font-size: 2rem;
+    }
+
+    .sobre .tx-titulo {
+        font-size: 1.5rem;
+    }
+
+    .sobre .sobre-mim {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sobre img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .sobre .tx-title {
+        font-size: 3.0rem;
+    }
+
+    .sobre .tx-titulo {
+        font-size: 1.2rem;
+    }
+
+    .sobre .sobre-mim {
+        font-size: 0.9rem;
+    }
+}
+
+/* PROJETO */
+
+.pro {
+    width: 100%;
+    padding: 12rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.pro #title {
+    justify-content: center;
+    font-size: 3.5rem;
+    color: #6f34fe;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.projeto {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap; 
+}
+
+.projeto div {
+    width: 400px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6f34fe, #7c8bd1);
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto div:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.projeto div a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.projeto div a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .pro {
+        padding: 2rem;
+    }
+    .projeto {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    .projeto div {
+        width: 00%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projeto div {
+        width: 100%;
+        max-width: 300px;
+        height: 150px;
+    }
+
+    .projeto div a {
+        font-size: 1rem;
+    }
+}
+
+    /* estilização do botão */
+
+    .wrapper{
+        width: fit-content;
+        border-radius: 10px;
+    }
+    .bt{
+        width:180px;
+        height:60px;
+        background: linear-gradient(to left top, #000000 50%, #000000 50%);
+        border-style: none;
+        color:#fff;
+        font-size: 23px;
+        letter-spacing: 3px;
+        border-radius: 10px;
+        font-family: 'Lato';
+        font-weight: 600;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        padding: 0px;
+        overflow: hidden;
+        transition: all .5s;
+        box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+    }
+    .bt span{
+        position: absolute;
+        display: block;
+    }
+    .bt span:nth-child(1){
+        height: 3px;
+        width:200px;
+        top:0px;
+        left:-200px;
+        background: linear-gradient(to right, rgba(0,0,0,0),#6f34fe);
+        border-top-right-radius: 1px;
+        border-bottom-right-radius: 1px;
+        animation: span1 2s linear infinite;
+        animation-delay: 1s;
+    }
+    
+    @keyframes span1{
+        0%{
+            left:-200px
+        }
+        100%{
+            left:200px;
+        }
+    }
+    .bt span:nth-child(2){
+        height: 70px;
+        width: 3px;
+        top:-70px;
+        right:0px;
+        background: linear-gradient(to bottom, rgba(0,0,0,0), #7c8bd1);
+        border-bottom-left-radius: 1px;
+        border-bottom-right-radius: 1px;
+        animation: span2 2s linear infinite;
+        animation-delay: 2s;
+    }
+    @keyframes span2{
+        0%{
+            top:-70px;
+        }
+        100%{
+            top:70px;
+        }
+    }
+    .bt span:nth-child(3){
+        height:3px;
+        width:200px;
+        right:-200px;
+        bottom: 0px;
+        background: linear-gradient(to left, rgba(0,0,0,0), #6f34fe);
+        border-top-left-radius: 1px;
+        border-bottom-left-radius: 1px;
+        animation: span3 2s linear infinite;
+        animation-delay: 3s;
+    }
+    @keyframes span3{
+        0%{ 
+            right:-200px;
+        }
+        100%{
+            right: 200px;
+        }
+    }
+    
+    .bt span:nth-child(4){
+        height:70px;
+        width:3px;
+        bottom:-70px;
+        left:0px;
+        background: linear-gradient(to top, rgba(0,0,0,0), #7c8bd1);
+        border-top-right-radius: 1px;
+        border-top-left-radius: 1px;
+        animation: span4 2s linear infinite;
+        animation-delay: 4s;
+    }
+    @keyframes span4{
+        0%{
+            bottom: -70px;
+        }
+        100%{
+            bottom:70px;
+        }
+    }
+    
+    .bt:hover{
+        transition: all .5s;
+        transform: rotate(-3deg) scale(1.1);
+        box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+    }
+    .bt:hover span{
+        animation-play-state: paused;
+    } 
+
+/*PARTE DAS HABILIDADES  */
+.seto-2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+
+& .abilidade {
+    max-width: 1200px;
+    width: 100%;
+}
+
+& .item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+& .item > div {
+    flex: 1 1 30%; 
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(102, 102, 164, 0.303);
+}
+
+& .item i {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #6f34fe;
+}
+
+& .abilidade h1{
+    position:relative ;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3em;
+}
+
+& .abilidade h1 span{
+    color: #6f34fe;
+} 
+
+}
+
+/* login */
+/* CSS Geral */
+#seto-3 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    align-items: center;
+}
+
+.formulario {
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tx-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.tx-title span {
+    color: #7035fa;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+}
+
+#txbt {
+    width: 100%;
+    padding: 10px;
+    background-color: #6f34fe;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#txbt:hover {
+    background-color: #3f2b70;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .tx-title {
+        font-size: 1.5em;
+    }
+
+    .formulario {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tx-title {
+        font-size: 1.2em;
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.9em;
+    }
+
+    #txbt {
+        font-size: 0.9em;
+    }
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #7035fa;
+
+    & .footer-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 110px 8% 24px 8%;
+        align-items: center;
+    }
+
+    & .bt-social {
+        font-size: 30px;
+    }
+
+    & .bt-social i {
+        color: #fff;
+        position: relative;
+        padding: 15px;
+        background-color: #000000;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    & #copyright {
+        color: #fff;
+        font-size: 22px;
+    }
+
+    & .bt-social i:hover {
+        transition-timing-function: ease;
+        transform: translate(0, -15%);
+        transition: 0.4s;
+    }
+}
+
+
+
+
+
