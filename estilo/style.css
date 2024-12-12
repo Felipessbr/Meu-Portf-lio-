@@ -171,7 +171,7 @@ body {
         height: 90%;
     }
     .info .section-1 h1 {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .info .section-1 h3 {
@@ -283,7 +283,7 @@ body {
     }
 
     .sobre .tx-title {
-        font-size: 3.0rem;
+        font-size: 2.0rem;
     }
 
     .sobre .tx-titulo {
@@ -381,7 +381,7 @@ body {
         font-size: 1rem;
     }
     .pro #title {
-        font-size: 3em;
+        font-size: 2.2em;
         margin-bottom: 0;
     }
 }
@@ -511,8 +511,8 @@ body {
     background-color: #fff;
 
 & .abilidade {
-    max-width: 1200px;
     width: 100%;
+    max-width: 1200px;
 }
 
 & .item {
@@ -546,7 +546,7 @@ body {
     position:relative ;
     margin-top: 50px;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 & .abilidade h1 span{
@@ -556,7 +556,7 @@ body {
 }
 @media screen and (max-width: 480px) {
     .seto-2{
-        padding: 20px 10%;
+        padding: 20px 13%;
     }
 }
 
