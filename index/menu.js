@@ -14,11 +14,11 @@ window.revelar = ScrollReveal({reset:false})
 
 revelar.reveal('.efeito-txt-topo',{
     duration: 2000,
-    distance: '220px'
+    distance: '50px'
 })
 revelar.reveal('.efeito-img-topo',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
     delay:100
 })
 
@@ -26,25 +26,25 @@ revelar.reveal('.efeito-img-topo',{
 
 revelar.reveal('.imag',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
     delay:100,
     origin: 'left'
 })
 revelar.reveal('.tx-title',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
     delay:100,
     origin: 'left'
 })
 revelar.reveal('.tx-titulo',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
     delay:100,
     origin: 'right'
 })
 revelar.reveal('.sobre-mim',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
     delay:100
 })
 
@@ -53,24 +53,24 @@ revelar.reveal('.sobre-mim',{
 
 revelar.reveal('#title',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
     delay:100
 
 })
 revelar.reveal('.imagem-1',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
 
 })
 revelar.reveal('.imagem-2',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
     delay:300
 
 })
 revelar.reveal('.imagem-3',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
     delay:500
 
 })
@@ -79,7 +79,7 @@ revelar.reveal('.imagem-3',{
 
 revelar.reveal('#html-5',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
     delay:500,
     origin:'left'
 
@@ -87,7 +87,7 @@ revelar.reveal('#html-5',{
 
 revelar.reveal('#css',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
     delay:500,
     origin:'top'
 
@@ -95,27 +95,27 @@ revelar.reveal('#css',{
 
 revelar.reveal('#javaScript',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
     delay:500,
     origin:'right'
 
 })
 revelar.reveal('#github',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
     delay:500,
     origin:'left'
 
 })
 revelar.reveal('#react',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
     delay:500
 
 })
 revelar.reveal('#node',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
     delay:500,
     origin: 'right'
 
@@ -126,12 +126,12 @@ revelar.reveal('#node',{
 
 revelar.reveal('.tx1',{
     duration: 2000,
-    distance: '220px'
+    distance: '50px'
 
 })
 revelar.reveal('.tx2',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
     delay:200
 
 })
@@ -143,6 +143,6 @@ revelar.reveal('.tx3',{
 })
 revelar.reveal('.tx4',{
     duration: 2000,
-    distance: '220px',
+    distance: '50px',
     delay:800
 })

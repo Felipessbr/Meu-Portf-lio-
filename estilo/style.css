@@ -171,15 +171,11 @@ body {
         height: 90%;
     }
     .info .section-1 h1 {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
 
     .info .section-1 h3 {
         font-size: 1.2rem;
-    }
-
-    .info .section-1 p {
-        font-size: 0.8rem;
     }
 
     .info .imagem img {
@@ -384,6 +380,10 @@ body {
     .projeto div a {
         font-size: 1rem;
     }
+    .pro #title {
+        font-size: 3em;
+        margin-bottom: 0;
+    }
 }
 
     /* estilização do botão */
@@ -553,6 +553,11 @@ body {
     color: #6f34fe;
 } 
 
+}
+@media screen and (max-width: 480px) {
+    .seto-2{
+        padding: 20px 10%;
+    }
 }
 
 /* login */
