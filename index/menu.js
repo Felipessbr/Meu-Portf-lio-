@@ -59,18 +59,16 @@ revelar.reveal('#title',{
 })
 revelar.reveal('.imagem-1',{
     duration: 2000,
-    distance: '50px',
+
 
 })
 revelar.reveal('.imagem-2',{
     duration: 2000,
-    distance: '50px',
     delay:300
 
 })
 revelar.reveal('.imagem-3',{
     duration: 2000,
-    distance: '50px',
     delay:500
 
 })
@@ -100,7 +98,7 @@ revelar.reveal('#javaScript',{
     origin:'right'
 
 })
-revelar.reveal('#github',{
+revelar.reveal('#bootstrap',{
     duration: 2000,
     distance: '50px',
     delay:500,
