@@ -420,6 +420,11 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.374), rgba(0, 0, 0, 0.557)),
                       url(/Meu-Portf-lio-/img/api.png);
 }
+.card #img-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.374), rgba(0, 0, 0, 0.557)),
+                      url(/Meu-Portf-lio-/img/Captura\ de\ tela\ 2025-02-05\ 203529.png);
+}
+
 #cor{
     color: #d6d6d6;
 }
@@ -440,6 +445,9 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
                       url(/Meu-Portf-lio-/img/api.png);
 }
+
+
+
 
 
 .card .img span {
