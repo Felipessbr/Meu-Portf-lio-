@@ -724,3 +724,25 @@ footer {
     background-color: #111;
     color: var(--p-color);
 }
+
+/* Remover estilos padrão de links */
+a, a:visited, a:hover, a:active, a:focus {
+    color: inherit; /* Mantém a cor do elemento pai */
+    text-decoration: none; /* Remove sublinhado */
+    outline: none; /* Remove outline em foco */
+    -webkit-tap-highlight-color: transparent; /* Remove highlight em mobile */
+}
+
+/* Se estiver usando especificamente nos links do menu */
+.container .box nav ul li a,
+.container .box nav ul li a:visited,
+.container .box nav ul li a:hover,
+.container .box nav ul li a:active {
+    color: var(--p-color) !important; /* Mantenha sua cor personalizada */
+}
+
+/* Opcional: Estilize o foco para acessibilidade */
+a:focus-visible {
+    outline: 2px solid var(--text-color); /* Outline visível apenas em navegação por teclado */
+    outline-offset: 2px;
+}
