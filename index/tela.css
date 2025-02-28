@@ -106,3 +106,8 @@
         font-size: 12px;
     }
 }
+@media(orientation: landscape){
+    .info {
+        margin-top: 10rem;
+    }
+}

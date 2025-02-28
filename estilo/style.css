@@ -594,6 +594,7 @@ animation-play-state: paused;
     font-size: 1em;
     outline: none;
     background-color: transparent;
+    color: white;
   }
   
   textarea {
