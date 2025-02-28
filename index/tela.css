@@ -2,28 +2,14 @@
 @media screen and (max-width: 768px) {
     /* Navigation */
     nav a {
-        display: none;
     }
     .imagem {
-        display: none;
+        flex-direction: column;
+        width: 50%;
+        margin: auto;
     }
     img {
         display: none;
-    }
-
-    /* Footer */
-    footer .footer-item {
-        flex-direction: column;
-        text-align: center;
-        padding: 60px 5% 20px 5%;
-    }
-
-    footer .bt-social {
-        margin-bottom: 20px;
-    }
-
-    footer #copyright {
-        font-size: 18px;
     }
 
     /* Habilidades */
@@ -49,17 +35,42 @@
     #txbt {
         font-size: 0.9em;
     }
+    .footer-top, .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-links a {
+        margin: 0 0 5px 0;
+    }
+
+    .footer-contact p {
+        font-size: 13px;
+    }
+
+    .footer-divider {
+        margin: 20px 0;
+    }
+
+    .social-icon {
+        font-size: 20px;
+    }
 }
 
 /* TABLET */
 @media screen and (min-width: 768px) {
-    /* Header */
-    header #mobile-btn {
-        display: none;
-    }
-    #mobile-menu {
-        display: none;
-    }
 
     /* Info */
     .info .section-1 h1 {
@@ -78,5 +89,20 @@
     /* Sobre Mim & Projeto */
     .pro .projeto > div {
         width: 600px;
+    }
+    .footer-container {
+        padding: 0 15px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    .footer-info p {
+        font-size: 12px;
+    }
+
+    .footer-contact p {
+        font-size: 12px;
     }
 }

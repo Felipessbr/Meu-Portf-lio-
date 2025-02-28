@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -18,74 +19,55 @@
 </head>
 
 <body>
+    
     <header>
         <div class="container">
             <div class="box">
                 <nav>
-                    <a href="#" class="logo">Felipe</a>
+                    <div class="e-mail">
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <span class="tooltip">fs754282@gmail.com</span>
+                    </div>
+                    
 
                     <ul>
                         <li class="nav-item active">
-                            <a href="#seto">Home</a>
+                            <p><a href="https://www.linkedin.com/in/felipe-soares-dev1" target="_blank">Linkedin</a> /</p>
                         </li>
+                        
                         <li class="nav-item">
-                            <a href="#seto-1">Sobre</a>
+                            <a href="https://github.com/Felipessbr" target="_blank">Github </a> 
                         </li class="nav-item">
-                        <li>
-                            <a href="#title">Projeto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#seto-3">Contato</a>
-                        </li>
+                       
                     </ul>
-                    <button id="mobile-btn">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
+                    
                 </nav>
             </div>
         </div>
-        <div id="mobile-menu"> <!--mobile-menu-->
-            <ul>
-                <li>
-                    <a href="#seto">Home</a>
-                </li>
-                <li>
-                    <a href="#seto-1">Sobre</a>
-                </li>
-                <li>
-                    <a href="#section-card">Projeto</a>
-                </li>
-                <li>
-                    <a href="#seto-3">Contato</a>
-                </li>
-            </ul> <!--mobile-menu-->
-        </div>
-
+   
     </header>
     <main>
         <section id="seto">
             <div class="info">
                 <div class="section-1 efeito-txt-topo">
-                    <h1>Ola,Seja bem vindo(a)!</h1>
-                    <h3 class="line typing-animation">Front-end Developer</h3>
-                    <p> Eu sou um entusiasta do desenvolvimento Front-end, iniciando minha jornada para criar
-                        interfaces
-                        web impressionantes.</p>
-                    <div class="wrapper" style="background-color: blueviolet;">
-                        <a href="#seto-3" target="">
-                            <button class="bt">
-                                Contato
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
+                        <a href="#seto-3">
+                            <div class="info-btn">
+                                <button class="bt">
+                                    Contato
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                            </div>
                         </a>
+                    <p>
+                        Jornada no Front-end: aprendendo, criando e evoluindo!
+                    </p>
+
+                    <div class="imagem  efeito-img-topo">
+                        <img src="img/IMG_20231226_194434_284.jpg" alt="logo banner">
+                       <span class="cssanimation leSnake sequence">Oi, eu sou Felipe 👋</span>
                     </div>
                 </div>
-                <div class="imagem  efeito-img-topo">
-                    <img src="img/benner.png" alt="logo banner">
-                </div>
+
             </div>
         </section>
         <section id="seto-1">
@@ -93,15 +75,10 @@
                 <img src="img/IMG_20231226_194434_284.jpg" width="400px" class="imag">
                 <div class="infor">
                     <h1 class="tx-title">SOBRE MIM</h1>
-                    <h2 class="tx-titulo">Olá, me chamo Felipe Soares</h2>
                     <p class="sobre-mim">
-                        Sou um desenvolvedor front-end iniciante com conhecimento sólido em HTML, CSS e JavaScript e uma
-                        forte vontade de aprender e crescer na área. Tenho um perfil pró-ativo, com facilidade para
-                        colaborar em equipe e buscar soluções que aprimorem a experiência dos usuários. Busco uma
-                        oportunidade para aplicar meu conhecimento e desenvolver habilidades práticas, contribuindo com
-                        dedicação e entusiasmo para a criação de interfaces interessantes e funcionais. Estou sempre
-                        disposto a aprender novas tecnologias e boas práticas, com o objetivo de evoluir e agregar valor
-                        na minha carreira.
+                        Sou um desenvolvedor front-end com conhecimento sólido em HTML, CSS, JavaScript, Next.js, React, Tailwind CSS. Tenho uma forte vontade de aprender e crescer na área, sempre buscando aprimorar minhas habilidades e criar interfaces funcionais e intuitivas.
+
+                        Tenho um perfil pró-ativo , facilidade para colaborar em equipe e encontrar soluções que melhorem a experiência do usuário. Estou sempre disposto a aprender novas tecnologias e boas práticas. Meu objetivo é evoluir constantemente e agregar valor aos projetos nos quais estamos atuando.
                     </p>
                     <div class="wrapper">
                         <a href="https://github.com/Felipessbr" target="_blank">
@@ -117,12 +94,51 @@
                 </div>
             </div>
         </section>
+        <section id="seto-2">
+            <div class="abilidade">
+                <div class="carrossel-container">
+                    <div class="item">
+                        <div class="item-container">
+                            <!-- Itens do carrossel com loop -->
+                            <div class="skill-item">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-brands fa-css3"></i>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                            <div class="skill-item">
+                                <img src="img/tailwind-css.svg" alt="Tailwind CSS" class="tailwind-icon">
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-brands fa-react"></i>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-brands fa-node"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            // Adicionando itens duplicados dinamicamente com JavaScript
+            const container = document.querySelector('.item-container');
+            const items = container.innerHTML;  // Pega o HTML dos itens
+        
+            // Adiciona os itens duplicados
+            container.innerHTML += items;
+        </script>
+        
         <section id="section-card">
-            <h1>Porjeto</h1>
+            <h1>Projeto</h1>
             <div class="content">
                 <div class="card imagem-1">
                     <div class="img">
-                        <a href="https://felipessbr.github.io/disneyplus-clone/" target="_blank"><span>Disney</span></a>
+                        <span>Disney</span>
                     </div>
                     <div class="cont">
                         <span class="title-1">sobre</span>
@@ -132,13 +148,13 @@
                             Criação de scripts em JavaScript puro para funcionalidades interativas.</p>
                     </div>
                     <div class="arrow">
-                        <span>&#8673;</span>
+                        <a href="https://felipessbr.github.io/disneyplus-clone/" target="_blank"><button id="disney-btn">View</button></a>
                     </div>
+                    
                 </div>
                 <div class="card imagem-4">
                     <div class="img" id="img-4">
-                        <a href="https://felipessbr.github.io/Projeto-Barbearia/"
-                            target="_blank"><span>barbearia</span></a>
+                        <span>barbearia</span>
                     </div>
                     <div class="cont">
                         <span class="title-1">sobre</span>
@@ -148,7 +164,7 @@
                             necessidades da barbearia e de seus clientes.</p>
                     </div>
                     <div class="arrow">
-                        <span>&#8673;</span>
+                        <a href="https://felipessbr.github.io/Projeto-Barbearia/" target="_blank"><button>View</button></a>
                     </div>
                 </div>
 
@@ -164,107 +180,130 @@
                             organiza a estrutura de forma modular.</p>
                     </div>
                     <div class="arrow">
-                        <span>&#8673;</span>
+                        <button>View</button>
                     </div>
                 </div>
                 <div class="card imagem-3">
                     <div class="img" id="img-1">
-                        <a href="https://felipessbr.github.io/android/" target="_blank"><span>android</span></a>
+                        <span>app taxi</span>
                     </div>
                     <div class="cont">
                         <span class="title-1">sobre</span>
                         <p class="desc">
-                            Este projeto foi desenvolvido utilizando HTML e CSS, com foco em apresentar de forma visual
-                            e informativa a história do mascote do Android. A página utiliza uma estrutura de HTML para
-                            organizar o conteúdo textual e visual, enquanto o CSS é responsável por dar estilo e tornar
-                            o design mais atraente e organizado. </p>
+                            Um sistema intuitivo desenvolvido com React.js, Next.js e Tailwind CSS, voltado para facilitar o processo de reserva de corridas. Com uma interface simples e responsiva, o aplicativo permite que os usuários se cadastrem, façam login, busquem corridas disponíveis e realizem reservas de forma rápida e eficiente. </p>
                     </div>
                     <div class="arrow">
-                        <span>&#8673;</span>
+                        <a href="https://felipessbr.github.io/android/" target="_blank"><button>View</button></a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="seto-2">
-            <div class="abilidade">
-                <h1 class="tx-title">MINHAS <span>HABILIDADES</span>.</h1>
-                <div class="item">
-                    <div id="html-5">
-                        <i class="fa-brands fa-html5"></i>
-
-                    </div>
-                    <div id="css">
-                        <i class="fa-brands fa-css3"></i>
-
-                    </div>
-                    <div id="javaScript">
-                        <i class="fa-brands fa-js"></i>
-
-                    </div>
-                    <div id="bootstrap">
-                        <i class="fa-brands fa-bootstrap"></i>
-
-                    </div>
-                    <div id="react">
-                        <i class="fa-brands fa-react"></i>
-
-                    </div>
-                    <div id="node">
-                        <i class="fa-brands fa-node"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
+ 
         <!-- SEÇAO DE LOGIN -->
         <section id="seto-3">
-            <div class="formulario">
-                <h1 class="tx-title">FALA <span>COMIGO</span>.</h1>
-                <form action="https://formsubmit.co/fs754282@gmail.com" method="POST">
-                    <div class="campo tx1">
-                        <input type="text" placeholder="Seu nome completo" required autocomplete="additional-name">
+            <div class="cont-form">
+                <!-- Seção de Informações de Contato -->
+                <div class="contact-info">
+                    <div class="address">
+                        <div class="contact-item">
+                            <h3>Número de telefone</h3>
+                            <p>55+ 12 98226-1237</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Localização</h3>
+                            <p>Jacareí/SP</p>
+                        </div>
+                        
+                        <div class="contact-item social-links">
+                            <h3>Redes sociais</h3>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/feed/?doFeedRefresh=true&nis=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BzW4ZzfCESXG9rvRt8Dlreg%3D%3D" 
+                                   target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/Felipessbr" 
+                                   target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="campo tx2">
-                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email"
-                            required maxlength="40" minlength="5">
-                    </div>
-
-                    <div class="campo tx3">
-                        <input type="tel" placeholder="Seu celular" name="celular" required>
-                    </div>
-
-                    <div class="campo tx4">
-                        <textarea cols="30" rows="8" name="message" placeholder="Escrever aqui." required></textarea>
-                    </div>
-                    <input type="submit" value="ENVIAR" id="txbt">
-                    <input type="hidden" name="_subject" value="Navo contato!">
-                    <input type="hidden" nome="_captcha" value="false">
-                    <input type="hidden" nome="_template" value="table"></>
-                </form>
+                </div>
+        
+                <!-- Formulário de Contato -->
+                <div class="formulario">
+                    <h1 class="tx-title">FALA <span>COMIGO</span>.</h1>
+                    
+                    <form action="https://formsubmit.co/fs754282@gmail.com" method="POST">
+                        <div class="campo">
+                            <input type="text" name="name" placeholder="Seu nome completo" required>
+                        </div>
+                        
+                        <div class="campo">
+                            <input type="email" name="email" placeholder="Seu e-mail" required>
+                        </div>
+                        
+                        <div class="campo">
+                            <input type="tel" name="phone" placeholder="Seu número de celular" required>
+                        </div>
+                        
+                        <div class="campo">
+                            <textarea name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" id="txbt">ENVIAR MENSAGEM</button>
+                        
+                        <!-- Campos ocultos do formulário -->
+                        <input type="hidden" name="_subject" value="Novo contato!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="http://seusite.com/obrigado">
+                    </form>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="footer-item">
-
-            <span id="copyright">
-                &copyFelipe Soares 2024
-            </span>
-            <div class="bt-social">
-                <a href="#seto-3">
-                    <i class="fa-regular fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/feed/?doFeedRefresh=true&nis=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BzW4ZzfCESXG9rvRt8Dlreg%3D%3D"
-                    target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/account" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
+        <div class="footer-container fot">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <h2>Meu Portfólio</h2>
             </div>
+            <div class="footer-links">
+              <a href="#seto-1">Sobre</a>
+              <a href="#section-card">Projetos</a>
+              <a href="#seto-3">Contato</a>
+              <a href="#seto-2">Habilidades</a>
+            </div>
+          </div>
+          <hr class="footer-divider">
+          <div class="footer-bottom">
+            <div class="footer-contact">
+              <p><i class="fas fa-map-marker-alt"></i> Rua Vigilato Mancilha de Almeida</p>
+              <p><i class="fas fa-phone"></i> (12) 98226-1237</p>
+              <p><i class="fas fa-envelope"></i>fs754282@gmail.com</p>
+            </div>
+            <div class="footer-social">
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/felipe-soares-dev1 " target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+              <a href="https://w.app/ioj4rr" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="footer-info">
+            <p>&copy; 2025 felipe-soares-dev1</p>
+           
+          </div>
         </div>
-    </footer>
+      </footer>
+      
     <script src="index/menu.js" defer></script>
+
+    <button id="back-to-top" title="Voltar ao Topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    
+   
 </body>
 
 </html>

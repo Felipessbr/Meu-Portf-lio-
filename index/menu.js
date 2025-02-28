@@ -1,3 +1,23 @@
+
+document.addEventListener("DOMContentLoaded", function () {
+    const backToTopButton = document.getElementById("back-to-top");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    });
+
+    backToTopButton.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+
 $(document).ready(function() {
     $('#mobile-btn').on('click', function () {
         $('#mobile-menu').toggleClass('active');
@@ -8,6 +28,7 @@ $(document).ready(function() {
 
 
 window.revelar = ScrollReveal({reset:false})
+
 
 
 //? TOPO DO SITE
