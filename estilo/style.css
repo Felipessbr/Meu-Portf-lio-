@@ -182,7 +182,7 @@ body {
 
 .info-btn{
     display: flex;
-    justify-content: center;
+    justify-content: center;    
 }
 .info a{
     text-decoration: none;
@@ -262,7 +262,7 @@ body {
 
 .sobre .sobre-mim {
     font-size: 1.1rem;
-    color: #ffffff;
+    color:var(--p-color);
     line-height: 1.6; 
     text-align: justify;
 }
@@ -498,6 +498,7 @@ animation-play-state: paused;
         padding: 0px;
         transition: all .5s;
         box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+        text-transform: uppercase;
     }
    
     .bt:hover{
@@ -602,6 +603,10 @@ animation-play-state: paused;
     resize: vertical;
     color: white;
   }
+  .social-icons{
+    color: var(--p-color);
+  }
+  
   
   #txbt {
     width: 100%;
@@ -677,12 +682,11 @@ footer {
     justify-content: center;
 }
 .social-icon {
-    color: var(--p-color);
     font-size: 22px;
     transition: color 0.3s;
 }
 .social-icon:hover {
-    color: var(--primary-colo);
+    color: var(--p-color);
 }
 .footer-contact p {
     margin: 5px 0;
@@ -690,20 +694,12 @@ footer {
 }
 .footer-contact i {
     margin-right: 8px;
+
 }
 .footer-info p {
     font-size: 13px;
     opacity: 0.7;
 }
-.footer-info a {
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-.footer-info a:hover {
-    text-decoration: underline;
-}
-
 
   #back-to-top {
     position: fixed;
