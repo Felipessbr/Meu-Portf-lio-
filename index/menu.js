@@ -1,3 +1,54 @@
+(function () {
+    emailjs.init("bPYsKNUOa516NBaZX"); //Public Key
+  })();
+
+  const form = document.getElementById("contact-form");
+  const loader = document.getElementById("loader");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Mostra o loader
+    loader.classList.remove("hidden");
+
+    // Envia o formulário com EmailJS
+    emailjs
+      .sendForm("service_qzsw6hz", "template_aprmcib", this)
+      .then(() => {
+        loader.classList.add("hidden");
+        form.reset();
+
+        // SweetAlert2 - sucesso
+        Swal.fire({
+          title: "Mensagem enviada!",
+          text: "Obrigado por entrar em contato, retornarei em breve 😊",
+          icon: "success",
+          confirmButtonColor: "#808080",
+          showClass: {
+            popup: "animate__animated animate__fadeInDown",
+          },
+          hideClass: {
+            popup: "animate__animated animate__fadeOutUp",
+          },
+        });
+      })
+      .catch((error) => {
+        loader.classList.add("hidden");
+
+        // SweetAlert2 - erro
+        Swal.fire({
+          title: "Erro ao enviar!",
+          text: "Houve um problema ao enviar sua mensagem. Tente novamente.",
+          icon: "error",
+          confirmButtonColor: "#d33",
+          showClass: {
+            popup: "animate__animated animate__shakeX",
+          },
+        });
+
+        console.error("Erro:", error);
+      });
+  });
 
 document.addEventListener("DOMContentLoaded", function () {
     const backToTopButton = document.getElementById("back-to-top");
@@ -26,9 +77,7 @@ $(document).ready(function() {
     });
 });
 
-
 window.revelar = ScrollReveal({reset:false})
-
 
 
 //? TOPO DO SITE

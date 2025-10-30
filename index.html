@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -231,38 +236,35 @@
                     </div>
                 </div>
         
-                <!-- Formulário de Contato -->
-                <div class="formulario">
-                    <h1 class="tx-title">FALA <span>COMIGO</span>.</h1>
-                    
-                    <form action="https://formsubmit.co/fs754282@gmail.com" method="POST">
-                        <div class="campo">
-                            <input type="text" name="name" placeholder="Seu nome completo" required>
-                        </div>
-                        
-                        <div class="campo">
-                            <input type="email" name="email" placeholder="Seu e-mail" required>
-                        </div>
-                        
-                        <div class="campo">
-                            <input type="tel" name="phone" placeholder="Seu número de celular" required>
-                        </div>
-                        
-                        <div class="campo">
-                            <textarea name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
-                        </div>
-                        
-                        <button type="submit" id="txbt">ENVIAR MENSAGEM</button>
-                        
-                        <!-- Campos ocultos do formulário -->
-                        <input type="hidden" name="_subject" value="Novo contato!">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_next" value="http://seusite.com/obrigado">
-                    </form>
-                </div>
-            </div>
-        </section>
+               <!-- Formulário de Contato -->
+<div class="formulario">
+  <h1 class="tx-title">FALA <span>COMIGO</span>.</h1>
+
+  <form id="contact-form">
+    <div class="campo">
+      <input type="text" name="from_name" placeholder="Seu nome completo" required />
+    </div>
+
+    <div class="campo">
+      <input type="email" name="reply_to" placeholder="Seu e-mail" required />
+    </div>
+
+    <div class="campo">
+      <input type="tel" name="phone" placeholder="Seu número de celular" required />
+    </div>
+
+    <div class="campo">
+      <textarea name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
+    </div>
+
+    <button type="submit" id="txbt">ENVIAR MENSAGEM</button>
+
+    <!-- Loader -->
+    <div id="loader" class="hidden"></div>
+  </form>
+</div>
+</div>
+ </section>
     </main>
     <footer>
         <div class="footer-container fot">
@@ -298,11 +300,12 @@
       </footer>
       
     <script src="index/menu.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <button id="back-to-top" title="Voltar ao Topo">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
-    
    
 </body>
 
