@@ -1,312 +1,205 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfolio</title>
-    <link rel="stylesheet" href="index/tela.css">
-    <link rel="stylesheet" href="estilo/style.css">
-    <!-- link da barra menu -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
-        
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta name="description"
+    content="Portfólio de Felipe Soares, desenvolvedor Front-end. Projetos, habilidades e contato.">
+  <title>Felipe Soares | Desenvolvedor Front-end</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="estilo/style.css">
+  <link rel="stylesheet" href="estilo/tela.css">
 </head>
 
 <body>
-    
-    <header>
-        <div class="container">
-            <div class="box">
-                <nav>
-                    <div class="e-mail">
-                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
-                        <span class="tooltip">fs754282@gmail.com</span>
-                    </div>
-                    
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="Felipe Soares - início"><span class="brand-mark">FS</span><span>Felipe
+          <b>Soares</b></span></a>
+      <button class="menu-toggle" id="mobile-btn" aria-label="Abrir menu" aria-expanded="false"><i
+          class="fa-solid fa-bars"></i></button>
+      <nav class="main-nav" id="mobile-menu" aria-label="Navegação principal">
+        <a class="nav-link active" href="#inicio">Início</a>
+        <a class="nav-link" href="#projetos">Projetos</a>
+        <a class="nav-link" href="#sobre">Sobre</a>
+        <a class="nav-link" href="#contato">Contato</a>
+      </nav>
 
-                    <ul>
-                        <li class="nav-item active">
-                            <p><a href="https://www.linkedin.com/in/felipe-soares-dev1" target="_blank">Linkedin</a> /</p>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a href="https://github.com/Felipessbr" target="_blank">Github </a> 
-                        </li class="nav-item">
-                       
-                    </ul>
-                    
-                </nav>
-            </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Olá, eu sou</p>
+        <h1>Felipe <em>Soares</em><br>Sousa Brito<span class="lime-dot">.</span></h1>
+        <h2>Desenvolvedor <span>Front-end</span></h2>
+        <p class="hero-description">Transformo ideias em interfaces modernas e funcionais. Sou apaixonado por tecnologia
+          e estou sempre buscando aprender, criar e evoluir como desenvolvedor.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projetos">Ver projetos <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="text-link" href="#contato">Entrar em contato <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-   
-    </header>
-    <main>
-        <section id="seto">
-            <div class="info">
-                <div class="section-1 efeito-txt-topo">
-                        <a href="#seto-3">
-                            <div class="info-btn">
-                                <button class="bt">
-                                    Contato
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </button>
-                            </div>
-                        </a>
-                    <p>
-                        Jornada no Front-end: aprendendo, criando e evoluindo!
-                    </p>
-
-                    <div class="imagem  efeito-img-topo">
-                        <img src="img/IMG_20231226_194434_284.jpg" alt="logo banner">
-                       <span class="cssanimation leSnake sequence">Oi, eu sou Felipe 👋</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section id="seto-1">
-            <div class="sobre">
-                <img src="img/IMG_20231226_194434_284.jpg" width="400px" class="imag">
-                <div class="infor">
-                    <h1 class="tx-title">SOBRE MIM</h1>
-                    <p class="sobre-mim">
-                        Sou um desenvolvedor front-end com conhecimento sólido em HTML, CSS, JavaScript, Next.js, React, Tailwind CSS. Tenho uma forte vontade de aprender e crescer na área, sempre buscando aprimorar minhas habilidades e criar interfaces funcionais e intuitivas.
-
-                        Tenho um perfil pró-ativo , facilidade para colaborar em equipe e encontrar soluções que melhorem a experiência do usuário. Estou sempre disposto a aprender novas tecnologias e boas práticas. Meu objetivo é evoluir constantemente e agregar valor aos projetos nos quais estamos atuando.
-                    </p>
-                    <div class="wrapper">
-                        <a href="https://github.com/Felipessbr" target="_blank">
-                            <button class="bt">
-                                GITHUB
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="seto-2">
-            <div class="abilidade">
-                <div class="carrossel-container">
-                    <div class="item">
-                        <div class="item-container">
-                            <!-- Itens do carrossel com loop -->
-                            <div class="skill-item">
-                                <i class="fa-brands fa-html5"></i>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-brands fa-css3"></i>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-brands fa-js"></i>
-                            </div>
-                            <div class="skill-item">
-                                <img src="img/tailwind-css.svg" alt="Tailwind CSS" class="tailwind-icon">
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-brands fa-react"></i>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fa-brands fa-node"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <script>
-            // Adicionando itens duplicados dinamicamente com JavaScript
-            const container = document.querySelector('.item-container');
-            const items = container.innerHTML;  // Pega o HTML dos itens
-        
-            // Adiciona os itens duplicados
-            container.innerHTML += items;
-        </script>
-        
-        <section id="section-card">
-            <h1>Projeto</h1>
-            <div class="content">
-                <div class="card imagem-1">
-                    <div class="img">
-                        <span>Disney</span>
-                    </div>
-                    <div class="cont">
-                        <span class="title-1">sobre</span>
-                        <p class="desc">O projeto é uma réplica inspirada no site oficial da Disney, uso de estruturas
-                            semânticas em HTML.
-                            Aplicação de flexbox e grid para organização do layout.
-                            Criação de scripts em JavaScript puro para funcionalidades interativas.</p>
-                    </div>
-                    <div class="arrow">
-                        <a href="https://felipessbr.github.io/disneyplus-clone/" target="_blank"><button id="disney-btn">View</button></a>
-                    </div>
-                    
-                </div>
-                <div class="card imagem-4">
-                    <div class="img" id="img-4">
-                        <span>barbearia</span>
-                    </div>
-                    <div class="cont">
-                        <span class="title-1">sobre</span>
-                        <p class="desc">O desenvolvimento do site da Studio Vikings Barbershop foi um projeto desafiador
-                            e gratificante. Através da utilização de tecnologias modernas e de um sistema de agendamento
-                            online eficiente, foi possível criar um site completo e intuitivo, que atende às
-                            necessidades da barbearia e de seus clientes.</p>
-                    </div>
-                    <div class="arrow">
-                        <a href="https://felipessbr.github.io/Projeto-Barbearia/" target="_blank"><button>View</button></a>
-                    </div>
-                </div>
-
-                <div class="card imagem-2">
-                    <div class="img" id="img-2">
-                        <span id="cor">Api</span>
-                    </div>
-                    <div class="cont">
-                        <span class="title-1">sobre</span>
-                        <p class="desc">Este projeto é um blog interativo desenvolvido com HTML, CSS e JavaScript puro,
-                            que utiliza a API do JSONPlaceholder para obter, exibir e manipular dados, Além disso o
-                            projeto inclui controles de carregamento (loading) para melhorar a experiência do usuário e
-                            organiza a estrutura de forma modular.</p>
-                    </div>
-                    <div class="arrow">
-                        <button>View</button>
-                    </div>
-                </div>
-                <div class="card imagem-3">
-                    <div class="img" id="img-1">
-                        <span>app taxi</span>
-                    </div>
-                    <div class="cont">
-                        <span class="title-1">sobre</span>
-                        <p class="desc">
-                            Um sistema intuitivo desenvolvido com React.js, Next.js e Tailwind CSS, voltado para facilitar o processo de reserva de corridas. Com uma interface simples e responsiva, o aplicativo permite que os usuários se cadastrem, façam login, busquem corridas disponíveis e realizem reservas de forma rápida e eficiente. </p>
-                    </div>
-                    <div class="arrow">
-                        <a href="https://restaxi.netlify.app/" target="_blank"><button>View</button></a>
-                    </div>
-                </div>
-            </div>
-        </section>
- 
-        <!-- SEÇAO DE LOGIN -->
-        <section id="seto-3">
-            <div class="cont-form">
-                <!-- Seção de Informações de Contato -->
-                <div class="contact-info">
-                    <div class="address">
-                        <div class="contact-item">
-                            <h3>Número de telefone</h3>
-                            <p>55+ 12 98226-1237</p>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <h3>Localização</h3>
-                            <p>Jacareí/SP</p>
-                        </div>
-                        
-                        <div class="contact-item social-links">
-                            <h3>Redes sociais</h3>
-                            <div class="social-icons">
-                                <a href="https://www.linkedin.com/feed/?doFeedRefresh=true&nis=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BzW4ZzfCESXG9rvRt8Dlreg%3D%3D" 
-                                   target="_blank">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                                <a href="https://github.com/Felipessbr" 
-                                   target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-               <!-- Formulário de Contato -->
-<div class="formulario">
-  <h1 class="tx-title">FALA <span>COMIGO</span>.</h1>
-
-  <form id="contact-form">
-    <div class="campo">
-      <input type="text" name="from_name" placeholder="Seu nome completo" required />
-    </div>
-
-    <div class="campo">
-      <input type="email" name="reply_to" placeholder="Seu e-mail" required />
-    </div>
-
-    <div class="campo">
-      <input type="tel" name="phone" placeholder="Seu número de celular" required />
-    </div>
-
-    <div class="campo">
-      <textarea name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
-    </div>
-
-    <button type="submit" id="txbt">ENVIAR MENSAGEM</button>
-
-    <!-- Loader -->
-    <div id="loader" class="hidden"></div>
-  </form>
-</div>
-</div>
- </section>
-    </main>
-    <footer>
-        <div class="footer-container fot">
-          <div class="footer-top">
-            <div class="footer-logo">
-              <h2>Meu Portfólio</h2>
-            </div>
-            <div class="footer-links">
-              <a href="#seto-1">Sobre</a>
-              <a href="#section-card">Projetos</a>
-              <a href="#seto-3">Contato</a>
-              <a href="#seto-2">Habilidades</a>
-            </div>
-          </div>
-          <hr class="footer-divider">
-          <div class="footer-bottom">
-            <div class="footer-contact">
-              <p><i class="fas fa-map-marker-alt"></i> Rua Vigilato Mancilha de Almeida</p>
-              <p><i class="fas fa-phone"></i> (12) 98226-1237</p>
-              <p><i class="fas fa-envelope"></i>fs754282@gmail.com</p>
-            </div>
-            <div class="footer-social">
-              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/felipe-soares-dev1 " target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-              <a href="https://w.app/ioj4rr" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-            </div>
-          </div>
-          <div class="footer-info">
-            <p>&copy; 2025 felipe-soares-dev1</p>
-           
-          </div>
+        <div class="hero-links">
+          <a href="https://github.com/Felipessbr" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>
+            GitHub <i class="fa-solid fa-arrow-up-right-from-square external"></i></a>
+          <span class="link-divider"></span>
+          <a href="https://www.linkedin.com/in/felipe-soares-dev1/" target="_blank" rel="noreferrer"><i
+              class="fa-brands fa-linkedin"></i> LinkedIn <i
+              class="fa-solid fa-arrow-up-right-from-square external"></i></a>
+          <span class="link-divider"></span>
+          <a href="mailto:fs754282@gmail.com"><i class="fa-solid fa-envelope"></i> E-mail</a>
         </div>
-      </footer>
-      
-    <script src="index/menu.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      </div>
+      <div class="hero-visual" aria-label="Foto de Felipe">
+        <div class="dot-pattern dots-one"></div>
+        <div class="portrait-frame"></div>
+        <div class="portrait-wrap"><img src="img/1785603068900.jpg" alt="Foto de Felipe Soares"></div>
+        <div class="decor-stairs stairs-one"></div>
+        <div class="visual-dots"><i></i><i></i><i></i><i></i></div>
+        <span class="visual-label">DESENVOLVIMENTO WEB · 2026</span>
+      </div>
+    </section>
 
-    <button id="back-to-top" title="Voltar ao Topo">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
-   
+    <section class="about-section section-shell section-line" id="sobre">
+      <div class="about-copy">
+        <p class="eyebrow"><span></span> Sobre mim</p>
+        <h2>Mais que código,<br>eu construo <em>soluções.</em></h2>
+        <p>Sou desenvolvedor Front-end em formação, focado em criar experiências digitais que unem design, performance e
+          usabilidade. Tenho interesse em aprender novas tecnologias, desenvolver projetos práticos e evoluir
+          constantemente na área.</p>
+        <div class="about-meta">
+          <div><i class="fa-solid fa-location-dot"></i><span><b>Jacarei — SP</b><small>Brasil</small></span></div>
+          <div><i class="fa-solid fa-graduation-cap"></i><span><b>UNIP — ADS</b><small>Em andamento</small></span></div>
+          <div><i class="fa-solid fa-code"></i><span><b>Foco em</b><small>Front-end</small></span></div>
+        </div>
+      </div>
+      <div class="skills-panel" id="habilidades">
+        <div class="panel-heading">
+          <h3>Minhas habilidades</h3><span><i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+        <div class="skills-grid">
+          <div class="skill"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+          <div class="skill"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+          <div class="skill"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+          <div class="skill"><i class="fa-brands fa-react"></i><span>React</span></div>
+          <div class="skill"><img src="img/tailwind-css.svg" alt=""><span>Tailwind CSS</span></div>
+          <div class="skill"><i class="fa-brands fa-git-alt"></i><span>Git & GitHub</span></div>
+          <div class="skill"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+          <div class="skill"><i class="fa-solid fa-cloud"></i><span>APIs</span></div>
+          <div class="skill"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section section-shell section-line" id="projetos">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> Meus projetos</p>
+          <h2>Projetos em <em>destaque.</em></h2>
+        </div>
+        <a class="text-link" href="https://github.com/Felipessbr?tab=repositories" target="_blank" rel="noreferrer">Ver
+          repositórios <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon football"><i class="fa-solid fa-futbol"></i></div>
+
+            <div>
+              <h3>CopaLive (Aplicativo em desenvolvimento)</h3>
+              <span class="project-type">Web App </span>
+            </div>
+
+          </div>
+          <p>O CopaLive é um app de futebol para acompanhar placares ao vivo, resultados, competições e clubes favoritos em um só lugar.
+          </p>
+          <div class="project-bottom">
+            <div class="tags"><span>React</span><span>Tailwind</span><span>API</span></div><a
+              href="https://github.com/Felipessbr/copalive" target="_blank" rel="noreferrer"
+              aria-label="Ver CopaLive no GitHub"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon monitor"><i class="fa-solid fa-desktop"></i></div>
+            <div>
+              <h3>ConectaLar (PIM-VII)</h3><span class="project-type">Web</span>
+            </div>
+          </div>
+          <p>Painel administrativo para gestão de serviços residenciais, desenvolvido como projeto acadêmico.</p>
+          <div class="project-bottom">
+            <div class="tags"><span>ASP.NET Core</span><span>C#</span><span>SQLite</span></div><a
+              href="https://github.com/GabrielxSpider/PIM-VII" target="_blank" rel="noreferrer"
+              aria-label="Ver ConectaLar no GitHub"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon code"><i class="fa-solid fa-code"></i></div>
+            <div>
+              <h3>Reservetaxi</h3><span class="project-type">Web</span>
+            </div>
+          </div>
+          <p>Um sistema voltado para facilitar o processo de reserva de corridas, realizem reservas de forma rápida e
+            eficiente.</p>
+          <div class="project-bottom">
+            <div class="tags"><span> Next.js 14 </span><span>React.js</span><span>Tailwind </span></div><a
+              href="https://restaxi.netlify.app/" target="_blank" rel="noreferrer"
+              aria-label="Ver projetos no GitHub"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon browser"><i class="fa-brands fa-discord"></i></div>
+            <div>
+              <h3>Disney+ Clone</h3><span class="project-type">Front-end</span>
+            </div>
+          </div>
+          <p>Interface inspirada em uma plataforma de streaming, praticando estrutura semântica, layout responsivo e
+            JavaScript.</p>
+          <div class="project-bottom">
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a
+              href="https://felipessbr.github.io/disneyplus-clone/" target="_blank" rel="noreferrer"
+              aria-label="Abrir Disney+ Clone"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section section-shell section-line" id="contato">
+      <div class="contact-intro">
+        <p class="eyebrow"><span></span> Vamos conversar</p>
+        <h2>Entre em <em>contato.</em></h2>
+        <p>Estou aberto a novas oportunidades, projetos e conexões. Vamos tirar uma ideia do papel?</p>
+      </div>
+      <div class="contact-details">
+        <a href="mailto:fs754282@gmail.com"><i
+            class="fa-solid fa-envelope"></i><span><b>E-mail</b><small>fs754282@gmail.com</small></span></a>
+        <a href="https://www.linkedin.com/in/felipe-soares-dev1/" target="_blank" rel="noreferrer"><i
+            class="fa-brands fa-linkedin"></i><span><b>LinkedIn</b><small>linkedin.com/in/felipe-soares-dev1</small></span></a>
+        <a href="https://github.com/Felipessbr" target="_blank" rel="noreferrer"><i
+            class="fa-brands fa-github"></i><span><b>GitHub</b><small>github.com/Felipessbr</small></span></a>
+      </div>
+      <div class="contact-signature"><span class="brand-mark">FS</span><b>Felipe Soares</b><small>Desenvolvedor
+          Front-end</small></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Felipe Soares. Todos os direitos reservados.</span>
+    <span>Feito com <i class="fa-solid fa-heart"></i> e muito código.</span>
+  </footer>
+  <button id="back-to-top" title="Voltar ao topo" aria-label="Voltar ao topo"><i
+      class="fa-solid fa-arrow-up"></i></button>
+  <script src="escript/menu.js" defer></script>
 </body>
 
 </html>
